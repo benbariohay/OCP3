@@ -61,7 +61,7 @@ Il ne peut y avoir qu'une réservation à la fois. Si une nouvelle réservation 
 Le mockup ci-dessous résume le fonctionnement de la page à créer :
 
 <img src="https://user.oc-static.com/upload/2018/09/07/15363337051487_SPAMockup.png"></img>
-<p align="center" class="center">Mockup de la page à créer</p>
+<p align="center" align="center">Mockup de la page à créer</p>
 
 ### Contraintes techniques
 

@@ -8,7 +8,7 @@ Cette application doit notamment, en s'appuyant sur JavaScript, afficher une car
 *L’application doit être développée en JavaScript côté client. Vous ne devez écrire aucun code côté serveur (l’utilisation de PHP ou d'un serveur Node.js, notamment, est interdite).*
 
 ![alt text](https://user.oc-static.com/upload/2018/01/05/15151407813526_velov.png)
-<i align="center">Vous allez développer une carte interactive permettant de réserver un vélo</i>
+<p align="center" font-style="italic">Vous allez développer une carte interactive permettant de réserver un vélo</p>
 
 ## Instructions
 

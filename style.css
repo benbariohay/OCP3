@@ -1,0 +1,449 @@
+body{
+	margin: 0;
+	background-color: #F0F2F4;
+}
+
+/* -----------------------------------------------------------------*/
+/* ----------------------------HEADER-------------------------------*/
+/* -----------------------------------------------------------------*/
+
+header {
+	height: 210px;
+	border-bottom: 2px solid #5c7287;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 30px;
+}
+
+#navbar ul{
+	display: flex;
+	margin-right: 50px;
+}
+
+#navbar li{
+	font-family: 'Italiana', serif;
+	font-size: 1.7em;
+	color: #5c7287;
+	padding-top: 90px;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+#navbar li:hover{
+	border-bottom: 2px solid white;
+}
+
+#navbar a{
+	text-decoration: none;
+	list-style-type: none;
+}
+
+#logo {
+	width: 200px;
+	height: 200px;
+}
+
+#logo_small{
+	width: 0;
+	height: 0;
+	visibility: hidden;
+}
+
+#logo img {
+	width: 100%;
+}
+
+/* -----------------------------------------------------------------*/
+/* ----------------------------SLIDER-------------------------------*/
+/* -----------------------------------------------------------------*/
+
+#slider {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+#slider-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+#slider img {
+	width: 100%;
+	max-width: 900px;
+	max-height: 450px;
+	border: 5px solid white;
+	border-radius: 3px;
+}
+
+#slider-btn button {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: #F0F2F4;
+	border: 1px solid #5c7287;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	color: #5c7287;
+	font-size: 1em;
+}
+
+#play-btn {
+	display: none;
+	}
+
+#pause-btn {
+	display: inline-block;
+	}
+
+/* -----------------------------------------------------------------*/
+/* ---------------------MAIN APP CONTAINER--------------------------*/
+/* -----------------------------------------------------------------*/
+
+#main-app-container {
+	display: flex;
+}
+
+#map {
+	width: 50%;
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 2px;
+}
+
+#station-info-booking {
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #E1E5E9;
+	border-radius: 2px;
+	font-size: 1.2em;
+}
+
+#station-info {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#station-info ul {
+	padding: 0;
+}
+
+#station-info li {
+	list-style: none;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 900;
+	font-size: 1.3em;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+#station-info li span {
+	font-weight: 100;
+	font-size: 0.8em;
+}
+
+form {
+	padding-top: 10px;
+	border-top: 2px solid #5c7287;
+}
+
+.name-input input{
+	width: 80%;
+	height: 20px;
+	margin-top: 5px;
+	color: #5c7287;
+	background-color: #F0F2F4;
+}
+
+.name-input label{
+	align-self: flex-start;
+	padding-left: 9%;
+}
+
+form button{
+	margin: 20px auto 20px auto;
+	width: 150px;
+	padding: 10px 20px 10px 20px;
+	font-size: 1.1em;
+	border: 1px solid #5c7287;
+	border-radius: 5px;
+	color: #5c7287;
+}
+
+#btn-position{
+	display: flex;
+	padding-left: inherit;
+}
+
+.name-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+.content-required {
+    color: #D36460;
+	font-family: 'Italiana', serif;
+	font-weight: bold;
+	font-size: 0.8em;
+}
+
+.hider {
+	display: none;
+}
+
+#station-info-form {
+	visibility: visible;
+}
+
+#popup {
+	width: 40%;
+	height: 600px;
+	background-color: #CDD1D4;
+	visibility: hidden;
+	position: absolute;
+	text-align: center;
+}
+
+#canvas-title {
+	font-family: 'Italiana', serif;
+	font-size: 1.7em;
+	color: #5c7287;
+	margin-top: 50px;
+}
+
+#signature {
+	border: 2px solid #5c7287;
+	border-radius: 2px;
+	margin-top: 70px;
+	margin-bottom: 50px;
+}
+
+#canvas-btn {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 50px;
+}
+
+#validation-button {
+	display: none;
+}
+
+#popup button {
+	margin: 20px auto 20px auto;
+	width: 100px;
+	padding: 10px 0 10px 0;
+	font-size: 1.1em;
+	border: 1px solid #5c7287;
+	border-radius: 5px;
+	color: #5c7287;
+}
+
+/* -----------------------------------------------------------------*/
+/* ---------------------BOOKING DATA TIMER--------------------------*/
+/* -----------------------------------------------------------------*/
+
+#current-booking{
+	border: 5px solid #5c7287;
+    height: 250px;
+    width: 85%;
+    margin: 50px auto;
+    border-radius: 10px;
+}
+
+#booking-title {
+	width: 30%;
+	height: 50px;
+	border-bottom-left-radius: 150px;
+	border-bottom-right-radius: 150px;
+	margin: auto;
+	background-color: #5c7287;
+	color: white;
+	display: flex;
+	justify-content: center;
+}
+
+#booking-title p {
+	font-size: 1.3em;
+	font-family: 'Italiana', serif;
+	margin: auto;
+}
+
+#booking-data-timer {
+	flex-direction: column;
+	align-items: center;
+	display: none;
+}
+
+#booking-data-timer p {
+	font-family: 'Raleway', sans-serif;
+}
+
+#no-reservation {
+	margin-top: 70px;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+}
+
+#cancel-book-button {
+	width: 200px;
+	padding: 10px 20px 10px 20px;
+	font-size: 1em;
+	border: 1px solid #5c7287;
+	border-radius: 5px;
+	color: #5c7287;			
+}
+
+#countdown-colon {
+	visibility: hidden;
+}
+
+/* -----------------------------------------------------------------*/
+/* -----------------------------------------------------------------*/
+/* ----------------------------RESPONSIVE---------------------------*/
+/* -----------------------------------------------------------------*/
+/* -----------------------------------------------------------------*/
+
+
+@media all and (max-width: 900px) {
+
+	header{
+		height: 110px;
+		padding-bottom: 20px;
+	}
+	
+	#navbar ul{
+		margin-right: 10px;
+		padding-left: 0px;
+	}
+
+	#navbar li {
+		font-size: 1.2em;
+		padding-top: 40px;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+	#navlink1 {
+		margin-left: 10px;
+		margin-right: 20px;
+	}
+
+	#navlink2 {
+		margin-left: 20px;
+		margin-right: 10px;
+	}
+
+	#logo {
+    	width: 0;
+    	height: 0;
+		visibility: hidden;
+	}
+
+    #logo_small {
+    	width: 100px;
+    	height: 100px;
+		visibility: visible; 
+	}
+
+	#logo_small img{
+		width: 100%;
+	}
+
+	/*------*/
+	/*SLIDER*/
+	/*------*/
+
+	#slider-btn button {
+		width: 35px;
+		height: 35px;
+		font-size: 0.7em;
+	}
+
+	/*------------------*/
+	/*MAIN APP CONTAINER*/
+	/*------------------*/	
+
+	#main-app-container {
+		flex-direction: column;
+	}
+
+	#map {
+		width: 90%;
+		height: 300px;
+	}
+
+	#station-info-booking{
+		width: 80%;
+		margin-top: 20px;
+		font-size: 1em;
+	}
+
+	#popup {
+		width: 80%;
+		height: 620px;
+		overflow-y: hidden;
+	}
+
+	#canvas-btn {
+		flex-direction: column;
+		margin-top: -20px;
+	}
+
+	/*------------------*/
+	/*BOOKING DATA TIMER*/
+	/*------------------*/
+
+	#booking-title {
+		width: 250px;
+		height: 50px;
+		border-bottom-left-radius: 150px;
+		border-bottom-right-radius: 150px;
+		margin: auto;
+		background-color: #5c7287;
+		color: white;
+	}
+}
+
+@media all and (max-width: 500px){
+	#navbar li {
+		font-size: 0.8em;
+	}
+
+	#navlink1 {
+		margin-left: 5px;
+		margin-right: 10px;
+	}
+
+	#navlink2 {
+		margin-left: 10px;
+		margin-right: 5px;
+	}
+
+	#slider img {
+		width: 300px;
+		height: 150px;
+	}
+
+	.popup{
+		height: 600px; /*600px*/
+	}
+
+	#booking-data-timer p {
+		font-size: 0.8em;
+	}
+
+	#cancel-book-button {
+		width: 160px;
+		padding: 7px 12px 7px 12px;
+		font-size: 0.8em;
+	}
+}
+

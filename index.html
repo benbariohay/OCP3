@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<title>LE VÉLO Marseille</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"/>
+	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Italiana&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+  integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+  crossorigin=""/>
+   <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+
+<body>
+
+    <header> 
+
+        <div id="navbar">
+            <ul>
+                <a href="#map" id="navlink1"><li>Réserver un vélo</li></a>
+                <div id="logo"><a href="index.html"><img src="images/logo.png" alt="Logo LE VÉLO Marseille"/></a></div>
+                <div id="logo_small"><a href="index.html"><img src="images/logo.png" alt="Logo LE VÉLO Marseille small"/></a></div>
+                <a href="#current-booking" id="navlink2"><li>Ma réservation</li></a>
+            </ul>
+        </div>
+
+    </header>
+    
+    <section id="slider">
+
+        <div id="slider-btn">
+            <button id="left-btn"><<</button>
+            <button id="play-btn"><i class="fas fa-play"></i></button>
+            <button id="pause-btn">ll</button>
+            <button id="right-btn">>></button>
+        </div>
+
+        <div id="slider-container"><img name="slide" alt="slider images"/></div>
+
+    </section>
+
+    <section id="main-app-container">
+
+        <div id="map"></div>
+        
+        <div id="station-info-booking">
+            <div id="popup">
+                <p id="canvas-title">Signez pour réserver</p>
+                <canvas id="signature"></canvas>
+                <div id="canvas-btn">
+                    <button id="validation-button">Valider</button>
+                    <button id="cancel-button">Annuler</button>
+                    <button id="erase-button">Effacer</button>  
+                </div>
+            </div>
+                <div id="station-info">
+                    <ul>
+                        <li id="station-status">Etat : <span></span></li>
+                        <li id="station-address">Adresse : <span></span></li>
+                        <li id="station-available-bikes">Vélos disponibles : <span></span></li>
+                        <li id="station-available-stands">Places disponibles : <span></span></li>
+                    </ul>
+                </div>
+
+                <form id="form">
+                    <div class="name-input">
+                        <label for="lastname-input">Nom :</label>
+                        <input type="text" id="lastname-input" class="input-area" required> <!-- ajouter required -->
+                        <span class="content-required" id="lastname-required"></span>
+                    </div>
+                    <div class="name-input">
+                        <label for="firstname-input">Prénom :</label>
+                        <input type="text" id="firstname-input" class="input-area" required> <!-- ajouter required -->
+                        <span class="content-required" id="firstname-required"></span>
+                    </div>
+                    <div id="btn-position"><button id="book-button">Réserver</button></div>
+                </form>
+        </div>
+
+    </section>
+
+    <footer id="current-booking">
+
+        <div id="booking-title"><p>Réservation en cours</p></div>
+        <p id="no-reservation">Pas de réservation</p>
+        <div id="booking-data-timer">
+            <p class="booking-data-hidden">Vélo réservé par : <span id="firstname-book"></span><span id="lastname-book"></span></p>
+            <p class="booking-data-hidden">Adresse : <span id="adress-book"></span></p> 
+            <p class="booking-data-hidden">Temps restant : <span id="counter"></span></p>
+            <button class="booking-data-hidden" id="cancel-book-button">Annuler la réservation</button>
+        </div>
+
+    </footer>
+
+
+    
+
+
+<script type="text/javascript" src="js/ajax.js"></script>
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+  integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+  crossorigin=""></script>
+</script>
+<script type="text/javascript" src="js/slider.js"></script>
+<script type="text/javascript" src="js/map.js"></script>
+<script type="text/javascript" src="js/web-storage.js"></script>
+<script type="text/javascript" src="js/info-station.js"></script>
+<script type="text/javascript" src="js/form.js"></script>
+<script type="text/javascript" src="js/popup.js"></script> 
+<script type="text/javascript" src="js/canvas.js"></script>
+<script type="text/javascript" src="js/booking.js"></script>
+<script type="text/javascript" src="js/countdown.js"></script>
+
+
+
+</body>
+
+
+</html>

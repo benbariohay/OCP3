@@ -8,7 +8,7 @@ Cette application doit notamment, en s'appuyant sur JavaScript, afficher une car
 *L’application doit être développée en JavaScript côté client. Vous ne devez écrire aucun code côté serveur (l’utilisation de PHP ou d'un serveur Node.js, notamment, est interdite).*
 
 ![alt text](https://user.oc-static.com/upload/2018/01/05/15151407813526_velov.png)
-<p align="center" font-style="italic">Vous allez développer une carte interactive permettant de réserver un vélo</p>
+<p align="center">Vous allez développer une carte interactive permettant de réserver un vélo</p>
 
 ## Instructions
 
@@ -60,8 +60,8 @@ Il ne peut y avoir qu'une réservation à la fois. Si une nouvelle réservation 
 
 Le mockup ci-dessous résume le fonctionnement de la page à créer :
 
-![alt text](https://user.oc-static.com/upload/2018/09/07/15363337051487_SPAMockup.png)
-<i align="center">Mockup de la page à créer</i>
+<img href="https://user.oc-static.com/upload/2018/09/07/15363337051487_SPAMockup.png"></img>
+<p align="center">Mockup de la page à créer</p>
 
 ### Contraintes techniques
 
